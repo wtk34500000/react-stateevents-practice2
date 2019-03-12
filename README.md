@@ -17,3 +17,5 @@ TO START: json-server --watch db.json
 - Render a list of all Beyonce images
 - When a User clicks on a Beyonce image it should change the "favorite" key, of that individual object to true or false depending on it's prior value
 - Refactor so that all Beyonce objects whose `"favorite" === true` are rendered inside of the Favorites container and the BeyContainer
+
+![beyonce gif](bey-slay.gif)
