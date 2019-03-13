@@ -5,8 +5,6 @@ class BeyCard extends React.Component {
     favorite: false
   }
 
-
-
   handleClick =()=>{
     this.setState({
       favorite: !this.state.favorite
@@ -16,7 +14,7 @@ class BeyCard extends React.Component {
   render() {
     return (
       
-      <div className={this.state.favorite? ('favrited'): ""}>
+      <div style={{display: this.state.favorite? ('favrited'): ""}}>
         <h3>{this.props.beyObj.name}</h3>
         <img onClick={this.handleClick} src={this.props.beyObj.img} />
       </div>
