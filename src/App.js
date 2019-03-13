@@ -7,12 +7,27 @@ import Favorites from './Favorites'
 
 class App extends Component {
 
+  state = {
+    beyImages: []
+  };
+
+  componentDidMount(){
+    fetch(`http://localhost:3001/beys`)
+    .then(resp => resp.json())
+    .then(beyImages => {
+      // console.log(beyImages)
+      this.setState({
+        beyImages: beyImages
+      })
+    })
+  }
+
   render() {
     
     return (
       <div className="container">
-        <BeyContainer />
-        <Favorites />
+        <BeyContainer beyObj={this.props.beyImages}/>
+        <Favorites beyObj={this.props.beyImages}/>
       </div>
     );
   }

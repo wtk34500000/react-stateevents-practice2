@@ -4,11 +4,9 @@ import BeyCard from './BeyCard'
 
 
 class BeyContainer extends React.Component {
-  state = {
-    beyImages: beyImages
-  };
+
   render() {
-    const arrayOfBeyCard=this.state.beyImages.map(img => <BeyCard key={img.id} beyObj={img}/>)
+    const arrayOfBeyCard=this.props.beyObj
     return (
       <div className="index">
         <h1>Index</h1>

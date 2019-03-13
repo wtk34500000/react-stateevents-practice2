@@ -13,8 +13,8 @@ class BeyCard extends React.Component {
 
   render() {
     return (
-      
-      <div style={{display: this.state.favorite? ('favrited'): ""}}>
+      // style={{display: this.state.favorite? ('favrited'): ""}}
+      <div >
         <h3>{this.props.beyObj.name}</h3>
         <img onClick={this.handleClick} src={this.props.beyObj.img} />
       </div>
