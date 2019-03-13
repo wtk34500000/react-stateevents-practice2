@@ -14,4 +14,4 @@ TO START: json-server --watch db.json
 - Render a list of all Beyonce images
 - When a User clicks on a Beyonce image it should remove that object from state (i.e. we are not making a DELETE fetch request)
 
-![beyonce gif](bey-slay.gif)
+![beyonce gif](./bey.gif)
